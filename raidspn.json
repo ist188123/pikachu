@@ -1,0 +1,205 @@
+[
+    
+    {
+        "nivel": "3",
+        "boss": "machamp",
+        "bosstipo":"<:luta:478587139756392448>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000031-dcf97ddeea/450/pokemon_icon_068_00.png",
+        "bosscp": "18144",
+        "cpiv": "1574-1967 / 1650-2063",
+        "bosted":"<:forrado:478895508706820126>",
+        "fraco": "<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>",
+        "counter": "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\nCharizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)\n**__1 Treinador:__**\nPokemons nível +32\n<:psiquico:478587230483513346>\nMewtwo\nAlakazam\nEspeon\nLugia\nExeggutor"
+    },
+    
+    {
+        "nivel": "3",
+        "boss": "piloswine",
+        "bosstipo":"<:gelo:478587230164615174><:ground:478587230168809477>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000041-e63f3e7363/450/poliswine.png",
+        "bosscp": "13663",
+        "cpiv": "1305 / 1631",
+        "bosted":"<:sol:478895508413349910> <:neve:478895508639973386>",
+        "fraco": "<:fogo:478587230747754543> <:luta:478587139756392448> <:erva:478587230814994432> <:steel:478587109725306880> <:steel:478587109725306880>",
+        "counter": "ENTEI\nFire Fang - Overheat \nKyogre\nWaterfall - Hydro Pump \nMoltres\nFire Spin - Overheat \nMachamp\nCounter - Dynamic Punch"
+    },
+    
+    
+    {
+        "nivel": "3",
+        "boss": "golem",
+        "bosstipo":"<:ground:478587230168809477><:pedra:478587231200739328>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000037-85af786acf/450/golem.png",
+        "bosscp": "32000",
+        "cpiv": "20 CP 1666",
+        "bosted":"<:sol:478895508413349910> <:nuvens:478579734322872321> ",
+        "fraco": "2X <:agua:478587230730846210><:erva:478587230814994432>",
+        "counter": "Duplo fraco contra WATER e GRASS\nKyogre Waterfall - Hydro Pump\nGyarados Waterfall - Hydro Pump\nGroudon Mud Shot - Solar Beam"
+    },
+    {
+        "nivel": "4",
+        "boss": "snorlax",
+        "bosstipo":" <:normal:478587230298963968>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000053-b3ee1b4e8b/450/Snorlax.png",
+        "bosscp": "25419",
+        "cpiv": "1917 / 2396",
+        "bosted":"<:nuvens:478895508681916416>",
+        "fraco": "<:luta:478587139756392448><:fantasma:478587230839898127><:steel:478587109725306880><:pedra:478587231200739328>",
+        "counter": "Machamp Dynamic Punch + Close Combat\nTyranitar Bite + Stone Edge\nDragonite DragonTail + Outrage"
+    },
+    {
+        "nivel": "4",
+        "boss": "lapras",
+        "bosstipo":" <:agua:478587230730846210><:gelo:478587230164615174>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000054-3eefb3fe9f/450/lapras.png",
+        "bosscp": "21768",
+        "cpiv": "1487 / 1859",
+        "bosted":"<:neve:478895508639973386><:chuva:478895508673527808>",
+        "fraco": "<:eletrico:478587230508548097><:erva:478587230814994432><:luta:478587139756392448><:pedra:478587231200739328>",
+        "counter": "Raiku\nMachamp\nHariyama\nMewtwo\nZapdos"
+    },
+
+    {
+        "nivel": "4",
+        "boss": "rhydon",
+        "bosstipo":" ",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000042-e928beb0f2/450/rhydon.png",
+        "bosscp": "30512",
+        "cpiv": "1886 / 2357 ",
+        "bosted":"<:sol:478895508413349910> <:nuvens:478579734322872321>",
+        "fraco": "<:chuva:478895508673527808> <:sol:478895508413349910> ",
+        "counter": "Kyogre\nWaterfall Hydro Pump \nVenusaur\nVine Whip - Frenzy Plant\nPoliwrath\nBubble - Hydro Pump\nGyarados\nWaterfall - Hydro Pump \nExeggutor\nBullet Seed - Solar Beam "
+    },
+
+    {
+        "nivel": "4",
+        "boss": "hundoom",
+        "bosstipo":" ",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000040-1e1dc1f153/450/houndoom.png",
+        "bosscp": "27302",
+        "cpiv": "1445 / 2529",
+        "bosted":"<:nevoeiro:478895508551761930><:sol:478895508413349910>",
+        "fraco": "<:agua:478587230730846210><:luta:478587139756392448><:ground:478587230168809477><:pedra:478587231200739328> ",
+        "counter": "Machamp\nHariyama\nBlaziken\nKyogre"
+    },
+
+    {
+        "nivel": "4",
+        "boss": "absol",
+        "bosstipo":"<:dark:478587231183831049>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png",
+        "bosscp": "26262",
+        "cpiv": "1232-1303 / 1540-1629",
+        "bosted":"<:nevoeiro:478895508551761930>",
+        "fraco": "<:inseto:478587230479188003><:fada:478587230814863372><:luta:478587139756392448>",
+        "counter": "Machamp Dynamic Punch\nHariyamaDynamic Punch\nHeracross Close Combat\nBreloom Dynamic Punch\nPinsir Bite\nBlaziken Overheat\nScizor Fury Cutter"
+    },
+
+    {
+        "nivel": "4",
+        "boss": "tyra",
+        "bosstipo":"<:pedra:478587231200739328><:dark:478587231183831049>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000029-e0378e12f0/450/tyra.png",
+        "bosscp": "24707",
+        "cpiv": "2097 / 2621",
+        "bosted":"<:nevoeiro:478895508551761930> <:nuvens:478895508681916416>",
+        "fraco": "<:agua:478587230730846210><:erva:478587230814994432><:ground:478587230168809477><:fada:478587230814863372><:steel:478587109725306880><:inseto:478587230479188003> 2X <:luta:478587139756392448>",
+        "counter": "Machamp\nDynamic Punch\nHariyama\nCounter - Dynamic Punch\nBlaziken\nCounter - Focus Blast\nKyogre\nWaterfall - Hydro Pump"
+    },
+    {
+        "nivel": "5",
+        "boss": "zapdos",
+         "bosstipo":" <:eletrico:478587230508548097><:voador:478587231259590676>  ",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000052-61bc062bd1/450/zapdos.png",
+        "bosscp": "42961",
+        "cpiv": "1820–1902 / 2275–2378",
+        "bosted":" <:vento:478895508685979648><:chuva:478895508673527808> ",
+        "fraco": "<:pedra:478587231200739328><:gelo:478587230164615174>",
+        "counter": "Tyranitar Smack Down + Stone Edge\nRayquaza Dragon Tail + Outrage\nGolem Rock Throw + Stone Edge "
+    },
+
+    
+    {
+        "nivel": "5",
+        "boss": "moltres",
+         "bosstipo":" <:fogo:478587230747754543><:voador:478587231259590676>  ",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000050-289e8299a1/450/moltres.png",
+        "bosscp": "41953",
+        "cpiv": "1788–1870 / 2235–2337",
+        "bosted":" <:vento:478895508685979648><:sol:478895508413349910> ",
+        "fraco": "<:agua:478587230730846210><:pedra:478587231200739328><:eletrico:478587230508548097>",
+        "counter": "Tyranitar Smack Down + Stone Edge\nGolem Rock Throw + Stone Edge\nKyogre Waterfall + Hydro Pump "
+    },
+
+{
+        "nivel": "5",
+        "boss": "mewtwo",
+         "bosstipo":" <:psiquico:478587230483513346> ",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png",
+        "bosscp": "60540",
+        "cpiv": "1682-2275 / 2103-2844",
+        "bosted":" <:vento:478895508685979648> ",
+        "fraco": "<:dark:478587231183831049><:inseto:478587230479188003><:fantasma:478587230839898127>",
+        "counter": "Tyranitar Bite + Crunch (Bite - Stone Edge)\nGyarados Bite + Crunch (Bite + Hydro Pump)\nRayquaza Dragon Tail + Outrage\nDragonite Dragon Tail + Outrage"
+    },
+
+    {
+        "nivel": "5",
+        "boss": "regirock",
+         "bosstipo":" <:pedra:478587231200739328> ",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
+        "bosscp": "41777",
+        "cpiv": "1682-1764 / 2103-2205",
+        "bosted":" <:nuvens:478895508681916416> ",
+        "fraco": "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>",
+        "counter": "Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
+    },
+
+    {
+        "nivel": "5",
+        "boss": "regis",
+         "bosstipo":"<:pedra:478587231200739328>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000035-0751e084bd/450/registeel.png",
+        "bosscp": "41777",
+        "cpiv": "1222-1292 / 1528-1615",
+        "bosted":"<:nuvens:478579734322872321>",
+        "fraco": "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>",
+        "counter": "Charizard with Overheat\nBlaziken FIRE\nTyphlosion - Overheat\nArcanine - Flamethrower\nSalamance - Fire Fang - Fire Blast\nHeracross - Combat"
+    },
+
+    {
+        "nivel": "5",
+        "boss": "regice",
+         "bosstipo":"<:dark:478587231183831049>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png",
+        "bosscp": "41777",
+        "cpiv": "1682-1764 / 2103-2205",
+        "bosted":"<:nuvens:478579734322872321>",
+        "fraco": "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>",
+        "counter": "ENTEI\nMOLTRES\nCHARIZARD\nFLAREON\nHO-oh"
+    },
+
+    {
+        "nivel": "5",
+        "boss": "articuno",
+         "bosstipo":"<:gelo:478587230164615174> <:voador:478587231259590676>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png",
+        "bosscp": "41777",
+        "cpiv": "1682-1764 / 2103-2205",
+        "bosted":"<:nuvens:478579734322872321>",
+        "fraco": "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>",
+        "counter": "ENTEI\nMOLTRES\nCHARIZARD\nFLAREON\nHO-oh"
+    },
+
+    {
+        "nivel": "5",
+        "boss": "hooh",
+         "bosstipo":"<:dark:478587231183831049>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png",
+        "bosscp": "48276",
+        "cpiv": "2222 / 2778",
+        "bosted":" <:sol:478895508413349910> <:vento:478895508685979648>",
+        "fraco": " <:eletrico:478587230508548097> <:agua:478587230730846210> 2X <:pedra:478587231200739328>",
+        "counter": "Tyranitar\nSmack Down - Stone Edge\nOmastar\nRock Throw - Rock Slide\nGolem\nRock Throw - Rock Blast\nKyogre\nWaterfall - Hydro Pump"
+    }
+]
