@@ -518,7 +518,7 @@ client.on("message", async (msg) => {
 
   //----criar canal ---
 
-  if (msg.channel.name == 'professor-pikachu') {
+  if (msg.channel.name == 'professor-boss') {
 
     if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
 
