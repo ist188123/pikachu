@@ -6,10 +6,7 @@ const prefix = "+";
 
 
 
-var qsonData = require('./quest.json');
-var quest = qsonData.map(x => x)
-var tamanhoFicheiroQuest = Object.keys(quest).length;
-//console.log(tamanhoFicheiro)
+
 
 
 
@@ -588,7 +585,10 @@ client.on("message", async (msg) => {
 
     if (msg.content.startsWith('!')) {
 
-
+var qsonData = require('./quest.json');
+var quest = qsonData.map(x => x)
+var tamanhoFicheiroQuest = Object.keys(quest).length;
+//console.log(tamanhoFicheiro)
 
       var dmsg = msg.content.substring(1);
 
