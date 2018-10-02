@@ -560,7 +560,7 @@ client.on("message", async (msg) => {
     var regra = "";
     var role = "";
     if (msg.content.startsWith('+')) {
-      msg.guild.channels.find("name", "professor-pikachu").sendMessage("Olá, " + msg.author + "\nAdicionado ás notificações da Quest de " + msg.content.substring(1) + ", no canal " + msg.guild.channels.find("name", "alertas"));
+      msg.guild.channels.find("name", "professor-boss").sendMessage("Olá, " + msg.author + "\nAdicionado ás notificações da Quest de " + msg.content.substring(1) + ", no canal " + msg.guild.channels.find("name", "alertas"));
 
 
       regra = msg.content.substring(1).toUpperCase();
@@ -573,7 +573,7 @@ client.on("message", async (msg) => {
       regra = msg.content.substring(1).toUpperCase();
       role = msg.guild.roles.find(role => role.name === regra);
       msg.member.removeRole(role);
-      msg.guild.channels.find("name", "professor-pikachu").sendMessage("Olá, " + msg.author + "\nRemovido das notificações da Quest de " + msg.content.substring(1) + ", no canal " + msg.guild.channels.find("name", "alertas"));
+      msg.guild.channels.find("name", "professor-boss").sendMessage("Olá, " + msg.author + "\nRemovido das notificações da Quest de " + msg.content.substring(1) + ", no canal " + msg.guild.channels.find("name", "alertas"));
 
     }
 
@@ -707,7 +707,7 @@ client.on("message", async (msg) => {
          */
         .setColor(0x00AE86)
         .setDescription(texto)
-        .setFooter("Desenvolvido por Damasc010, PKG - Pinhal Novo, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+        .setFooter("PN PoGo Raids, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
 
 
         .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
