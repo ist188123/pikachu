@@ -604,10 +604,10 @@ client.on("message", async (msg) => {
       ;
       for (var x = 0; x < tamanhoFicheiroQuest; x++) {
 
-        if (cod == raids[x].cod) {
-          quest = raids[x].quest;
-          missao = raids[x].missao;
-          questimagem = raids[x].questimagem;
+        if (cod == questMap[x].cod) {
+          quest = questMap[x].quest;
+          missao = questMap[x].missao;
+          questimagem = questMap[x].questimagem;
 
         }
       }
