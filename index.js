@@ -488,7 +488,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
 
     //----criar canal ---
 
-    if (msg.channel.name == 'lab-prof-willow') {
+    if (msg.channel.name == 'professor-pikachu') {
 
         if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
 
