@@ -7,7 +7,7 @@ const prefix = "+";
 
 
 var qsonData = require('./quest.json');
-var quest = jsonData.map(x => x)
+var quest = qsonData.map(x => x)
 var tamanhoFicheiro = Object.keys(quest).length;
 //console.log(tamanhoFicheiro)
 
