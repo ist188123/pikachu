@@ -20,14 +20,15 @@ client.on("message", async (msg) => {
     let adicional = "";
     
 
-   
+    let team_mystic = msg.guild.roles.find("name", "TREINADOR");
     let team_valor = msg.guild.roles.find("name", "TREINADOR");
-    
+    let team_instinct = msg.guild.roles.find("name", "TREINADOR");
 
     //imagens equipas
     let team_imagem = "";
     const valor = client.emojis.find("name", "valor");
-    
+    const mystic = client.emojis.find("name", "valor");
+    const instinct = client.emojis.find("name", "valor");
 
 
     //---------------------------------------------------	
@@ -74,13 +75,13 @@ client.on("message", async (msg) => {
             embed: {
                 color: 16580627,
                 title: "Olá Treinadores\nEste canal é temporário e será apagado às " + horaCanal('+2.5'),
-                description: "Para mais informação consultar " + msg.guild.channels.find("name", "tutorial-raids"),
+                description: "Para mais informação consultar " + msg.guild.channels.find("name", "willow-tutorial"),
 
 
                 timestamp: new Date(),
                 footer: {
                     icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-                    text: "PN PoGo Raids, pubicado "
+                    text: "Desenvolvido por Damasc010 - Pinhal Novo, pubicado "
                 }
 
             }
@@ -167,7 +168,7 @@ client.on("message", async (msg) => {
 
 
             //paga todas as mensagens do canal
-            delmsgdocanal("raids");
+            delmsgdocanal("raids-pinhal-novo");
 
 
 
@@ -243,7 +244,21 @@ client.on("message", async (msg) => {
                                     adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
                                 }
 
-                                
+                                if (msg.member.roles.has(team_mystic.id)) {
+                                    team_imagem = mystic.toString();
+                                    // msg.reply(team_imagem);
+                                    quantidade++;
+                                    array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
+                                    adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
+                                }
+
+                                if (msg.member.roles.has(team_instinct.id)) {
+                                    team_imagem = instinct.toString();
+                                    // msg.reply(team_imagem);
+                                    quantidade++;
+                                    array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
+                                    adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
+                                }
 
                                 // 
                             }
@@ -451,7 +466,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
             */
             .setColor(cor)
             .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
-            .setFooter("PN PoGo Raids, pubicado, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+            .setFooter("Desenvolvido por Damasc010, PKG - Pinhal Novo, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
             // .setImage("http://i.imgur.com/yVpymuV.png")
 
             .setThumbnail(bicho)
@@ -474,7 +489,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
             .addBlankField(true)
             .addField("\n\n\n\n\n\Fraco contra:", status, true);
 
-        msg.guild.channels.find("name", "raids").sendMessage({ embed });
+        msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });
 
 
     }
@@ -488,7 +503,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
 
     //----criar canal ---
 
-    if (msg.channel.name == 'professor-pikachu') {
+    if (msg.channel.name == 'lab-prof-willow') {
 
         if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
 
