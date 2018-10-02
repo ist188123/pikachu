@@ -20,15 +20,14 @@ client.on("message", async (msg) => {
     let adicional = "";
     
 
-    let team_mystic = msg.guild.roles.find("name", "TEAM MYSTIC");
-    let team_valor = msg.guild.roles.find("name", "TEAM VALOR");
-    let team_instinct = msg.guild.roles.find("name", "TEAM INSTINCT");
+   
+    let team_valor = msg.guild.roles.find("name", "TREINADOR");
+    
 
     //imagens equipas
     let team_imagem = "";
     const valor = client.emojis.find("name", "valor");
-    const mystic = client.emojis.find("name", "mystic");
-    const instinct = client.emojis.find("name", "instinct");
+    
 
 
     //---------------------------------------------------	
@@ -75,13 +74,13 @@ client.on("message", async (msg) => {
             embed: {
                 color: 16580627,
                 title: "Olá Treinadores\nEste canal é temporário e será apagado às " + horaCanal('+2.5'),
-                description: "Para mais informação consultar " + msg.guild.channels.find("name", "willow-tutorial"),
+                description: "Para mais informação consultar " + msg.guild.channels.find("name", "tutorial-raids"),
 
 
                 timestamp: new Date(),
                 footer: {
                     icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-                    text: "Desenvolvido por Damasc010 - Pinhal Novo, pubicado "
+                    text: "PN PoGo Raids, pubicado "
                 }
 
             }
@@ -168,7 +167,7 @@ client.on("message", async (msg) => {
 
 
             //paga todas as mensagens do canal
-            delmsgdocanal("raids-pinhal-novo");
+            delmsgdocanal("raids");
 
 
 
@@ -244,21 +243,7 @@ client.on("message", async (msg) => {
                                     adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
                                 }
 
-                                if (msg.member.roles.has(team_mystic.id)) {
-                                    team_imagem = mystic.toString();
-                                    // msg.reply(team_imagem);
-                                    quantidade++;
-                                    array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
-                                    adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
-                                }
-
-                                if (msg.member.roles.has(team_instinct.id)) {
-                                    team_imagem = instinct.toString();
-                                    // msg.reply(team_imagem);
-                                    quantidade++;
-                                    array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
-                                    adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
-                                }
+                                
 
                                 // 
                             }
@@ -466,7 +451,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
             */
             .setColor(cor)
             .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
-            .setFooter("Desenvolvido por Damasc010, PKG - Pinhal Novo, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+            .setFooter("PN PoGo Raids, pubicado, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
             // .setImage("http://i.imgur.com/yVpymuV.png")
 
             .setThumbnail(bicho)
