@@ -474,7 +474,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
             .addBlankField(true)
             .addField("\n\n\n\n\n\Fraco contra:", status, true);
 
-        msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });
+        msg.guild.channels.find("name", "raids").sendMessage({ embed });
 
 
     }
