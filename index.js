@@ -8,7 +8,7 @@ const prefix = "+";
 
 var qsonData = require('./quest.json');
 var quest = qsonData.map(x => x)
-var tamanhoFicheiro = Object.keys(quest).length;
+var tamanhoFicheiroQuest = Object.keys(quest).length;
 //console.log(tamanhoFicheiro)
 
 
@@ -600,7 +600,7 @@ let questimagem="";
 //ler ficheiro   
     
     ;
-  for (var x = 0; x < tamanhoFicheiro; x++) {
+  for (var x = 0; x < tamanhoFicheiroQuest; x++) {
 
   if (cod == raids[x].cod) {
     quest = raids[x].quest;
