@@ -75,7 +75,7 @@ client.on("message", async (msg) => {
             embed: {
                 color: 16580627,
                 title: "Olá Treinadores\nEste canal é temporário e será apagado às " + horaCanal('+2.5'),
-                description: "Para mais informação consultar " + msg.guild.channels.find("name", "willow-tutorial"),
+                description: "Para mais informação consultar " + msg.guild.channels.find("name", "tutorial-raids"),
 
 
                 timestamp: new Date(),
