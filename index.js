@@ -655,27 +655,23 @@ client.on("message", async (msg) => {
       })
     
 
-       
+       msg.channel.send({
+      embed: {
+        color: 16580627,
+
+        description: "**Resposta a : **\n\n\n",
+        timestamp: new Date(),
+        footer: {
+          icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
+          text: "- Pinhal Novo, pubicado "
+        }
+
+      }
     
 
      
 
-      const questemb = new Discord.RichEmbed()
-        .setTitle(quest)
-        .setAuthor(pokestop, "https://exraidspinhalnovo.webnode.pt/_files/200000044-1157e1263e/450/pstop.png")
-        /*
-         * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-         */
-        .setColor(0x00AE86)
-        .setDescription(missao)
-        .setFooter("PN PoGo Raids, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
-
-
-        .setThumbnail(questimagem)
-
-        .setTimestamp();
-
-      msg.guild.channels.find("name", "quest").sendMessage({ questemb });
+      
 
 
     
