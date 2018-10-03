@@ -662,7 +662,7 @@ client.on("message", async (msg) => {
 
         .setTimestamp();
 
-      msg.guild.channels.find("name", "alertas").sendMessage({ questemb });
+      msg.guild.channels.find("name", "quest").sendMessage({ questemb });
 
 
 
