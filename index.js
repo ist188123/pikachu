@@ -637,7 +637,7 @@ client.on("message", async (msg) => {
 
 
 
-        msg.guild.channels.find("name", "alertas").sendMessage(member.user + " Quest **" + quest + "** - Pokestop : **" + pokestop + "**");
+        msg.guild.channels.find("name", "alertas").sendMessage(horaCanal('+0')+" "+member.user + " Quest **" + quest + "** - Pokestop : **" + pokestop + "**");
 
 
 
