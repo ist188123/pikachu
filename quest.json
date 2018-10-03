@@ -10,37 +10,37 @@
    {
         "cod": "machop",
         "quest": "MACHOP",
-        "missao": "Ganhar 5 batalhas em ginásios",
+         "missao": "Missão ?",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000055-4ffbe50f62/450/show.png"
    },
    {
         "cod": "spinda",
         "quest": "SPINDA",
-        "missao": "Fazer 2 Great Curveball Throw",
+        "missao": "Missão ?",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000046-be5f5bf55a/450/spinda.png"
    },
    {
         "cod": "dratini",
         "quest": "DRATINI",
-        "missao": "Evoluir 10 Pokemons de agua.",
+        "missao": "Missão ?",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000047-b8d7fb9cce/450/dratini.png"
    },
     {
         "cod": "silver",
         "quest": "SILVER",
-        "missao": "Apanhar 5 Pokemons de fogo.",
+         "missao": "Missão ?",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000048-ebbc1ecc00/450/silver.png"
    },
     {
         "cod": "charmander",
         "quest": "CHARMANDER",
-        "missao": "Power up 5 vezes.",
+        "missao": "Missão ?",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000049-3e0cc3f074/450/charmander.png"
    },
     {
         "cod": "larvitar",
         "quest": "LARVITAR",
-        "missao": "3 excelentes seguidos.",
+         "missao": "Missão ?",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000051-6ea996fa83/200/larvitar.png"
    }
     ,
