@@ -620,11 +620,7 @@ client.on("message", async (msg) => {
       let autor = msg.author;
       
       
-      var today = new Date();
-      var dia = today.getDate(); 
-      var mes = today.getMonth(); 
-      var ano = today.getFullYear(); 
-
+      
 
       
 
@@ -646,7 +642,7 @@ client.on("message", async (msg) => {
 
 
 
-        msg.guild.channels.find("name", "alertas").sendMessage(member.user + " Quest **" + quest + "** - Pokestop : **" + pokestop + "**\nVálido até : "+dia+"-"+mes+"-"+ano+" às 23:59");
+        msg.guild.channels.find("name", "alertas").sendMessage(member.user + " Quest **" + quest + "** - Pokestop : **" + pokestop + "**");
 
 
 
