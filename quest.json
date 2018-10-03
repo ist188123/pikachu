@@ -3,7 +3,7 @@
     {
         "cod": "chansey",
         "quest": "CHANSEY",
-        "missao": "CHOCAR 5 OVOS",
+        "missao": "5 ovos",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000043-cd4a1ce43f/450/chansey.png"
    },
 
@@ -16,13 +16,13 @@
    {
         "cod": "spinda",
         "quest": "SPINDA",
-        "missao": "Fazer uma Great Curveball Throw",
+        "missao": "Fazer 2 Great Curveball Throw",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000046-be5f5bf55a/450/spinda.png"
    },
    {
         "cod": "dratini",
         "quest": "DRATINI",
-        "missao": "Ganhar uma Raid de nivel 3 ou superior.",
+        "missao": "Evoluir 10 Pokemons de agua.",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000047-b8d7fb9cce/450/dratini.png"
    },
     {
