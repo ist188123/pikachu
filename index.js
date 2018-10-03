@@ -658,7 +658,7 @@ client.on("message", async (msg) => {
        
     
 
-      setTimeout(function () {
+     
 
       const questemb = new Discord.RichEmbed()
         .setTitle(quest)
@@ -668,7 +668,7 @@ client.on("message", async (msg) => {
          */
         .setColor(0x00AE86)
         .setDescription(missao)
-        .setFooter("Pubicado ", "")
+        .setFooter("PN PoGo Raids, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
 
 
         .setThumbnail(questimagem)
@@ -678,7 +678,7 @@ client.on("message", async (msg) => {
       msg.guild.channels.find("name", "quest").sendMessage({ questemb });
 
 
-    }, 1500);
+    
 
 
 
