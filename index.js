@@ -653,8 +653,12 @@ client.on("message", async (msg) => {
 
 
       })
+    
 
+       
+    
 
+      setTimeout(function () {
 
       const questemb = new Discord.RichEmbed()
         .setTitle(quest)
@@ -674,7 +678,7 @@ client.on("message", async (msg) => {
       msg.guild.channels.find("name", "quest").sendMessage({ questemb });
 
 
-
+    }, 1500);
 
 
 
