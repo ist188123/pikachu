@@ -653,7 +653,9 @@ client.on("message", async (msg) => {
 
 
       })
-    
+      
+     msg.guild.channels.find("name", "quest").sendMessage("teste");
+      
      const questemb = new Discord.RichEmbed()
         .setTitle(quest)
         .setAuthor(pokestop, "https://exraidspinhalnovo.webnode.pt/_files/200000044-1157e1263e/450/pstop.png")
@@ -670,7 +672,7 @@ client.on("message", async (msg) => {
         .setTimestamp();
 
       msg.guild.channels.find("name", "quest").sendMessage({ questemb });
-      
+       msg.guild.channels.find("name", "quest").sendMessage("teste");
      
 
       
