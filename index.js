@@ -672,7 +672,7 @@ client.on("message", async (msg) => {
         .setTimestamp();
 
       msg.guild.channels.find("name", "quest").sendMessage({ questemb });
-       msg.guild.channels.find("name", "quest").sendMessage("teste");
+       msg.guild.channels.find("name", "quest").sendMessage(quest+" "+missao+" "+pokestop+" "+questimagem);
      
 
       
