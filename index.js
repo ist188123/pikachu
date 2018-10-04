@@ -597,8 +597,8 @@ client.on("message", async (msg) => {
 
       let pokestop = dmsg.split(" ").slice(1).join(" ");
       let quest = "";
-      let missao = horas;
-      let questimagem = bicho;
+      let missao = "";
+      let questimagem = "";
       //ler ficheiro   
 
       ;
