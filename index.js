@@ -670,7 +670,7 @@ client.on("message", async (msg) => {
 
   
  if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
-     msg.guild.channels.find("name", "alertas").sendMessage(msg.mentions.everyone);
+     msg.guild.channels.find("name", "alertas").sendMessage("\@everyone");
       msg.guild.channels.find("name", "alertas").sendMessage({ embed });
   
  }else{
