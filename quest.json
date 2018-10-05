@@ -57,6 +57,12 @@
         "quest": "STARDUST",
         "missao": "Missão ?",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000058-b21dcb3180/450/stardust.png"
+   },
+    {
+        "cod": "febas",
+        "quest": "FEBAS",
+        "missao": "Missão ?",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000058-b21dcb3180/450/stardust.png"
    }
 
 ]
