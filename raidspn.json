@@ -117,7 +117,17 @@
       "fraco": "<:pedra:496498109191421982><:gelo:496497142098296853>",
       "counter": "Tyranitar Smack Down + Stone Edge\nRayquaza Dragon Tail + Outrage\nGolem Rock Throw + Stone Edge "
   },
-
+{
+      "nivel": "5",
+      "boss": "gira",
+       "bosstipo":" <:fantasma:496497975095328781><:drago:496497770476077066>  ",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000062-368bd37841/450/gira.png",
+      "bosscp": "?",
+      "cpiv": "? / ?",
+      "bosted":" ? ",
+      "fraco": "<:fantasma:496497975095328781><:psiquico:496497445149212672> ",
+      "counter": "Gost 1.4X"
+  },
   
   {
       "nivel": "5",
