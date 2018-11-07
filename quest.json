@@ -70,6 +70,13 @@
         "quest": "ONIX",
         "missao": "Missão ?",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000061-43f4f44f35/450/onix.png"
+   },
+    
+    {
+        "cod": "nincada",
+        "quest": "NINCADA",
+        "missao": "Missão ?",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000063-b7e52b8dfd/450/nincada.png"
    }
 
 ]
