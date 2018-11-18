@@ -77,6 +77,13 @@
         "quest": "NINCADA",
         "missao": "Missão ?",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000063-b7e52b8dfd/450/nincada.png"
+   },
+    
+    {
+        "cod": "dito",
+        "quest": "DITO",
+        "missao": "Missão : Um lancamento excelente.",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000064-c9b68caada/450/dito.png"
    }
 
 ]
