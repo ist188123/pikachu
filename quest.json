@@ -84,6 +84,13 @@
         "quest": "DITTO",
         "missao": "Missão : Um lancamento excelente.",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000064-c9b68caada/450/dito.png"
+   },
+    
+    {
+        "cod": "aerodactyl",
+        "quest": "AERODACTYL",
+        "missao": "Missão : chocar dois ovos.",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000065-9c9749d923/450/aerodactyl.png"
    }
 
 ]
