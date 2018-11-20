@@ -212,4 +212,18 @@
       "fraco": " <:eletrico:496497521858969600> <:agua:496497618940329985> 2X <:pedra:496498109191421982>",
       "counter": "Tyranitar\nSmack Down - Stone Edge\nOmastar\nRock Throw - Rock Slide\nGolem\nRock Throw - Rock Blast\nKyogre\nWaterfall - Hydro Pump"
   }
+    ,
+
+  {
+      "nivel": "5",
+      "boss": "cresselia",
+       "bosstipo":"<:dark:496498046574788608>",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000067-579ac58994/450/cresselia.png",
+      "bosscp": "30849",
+      "cpiv": "1555–1663/1944–2041",
+      "bosted":" <:vento:496499092969750561> ",
+      "fraco": " <:dark:496498046574788608> <:fantasma:496497975095328781> <:inseto:496497374219206656>",
+      "counter": "Mewtwo Confusion -	Shadow Ball\nTyranitar Bite - Crunch\nGengar Shadow Claw - Shadow Ball\n\nDisponviel de 20 Novembro a 18 dezembro"
+  }
+    
 ]
