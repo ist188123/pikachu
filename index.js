@@ -58,7 +58,7 @@ client.on("message", async (msg) => {
         timestamp: new Date(),
         footer: {
           icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-          text: "Desenvolvido por Damasc010 - Pinhal Novo, pubicado "
+          text: "PN PoGo Raids, pubicado - Pinhal Novo, pubicado "
         }
 
       }
@@ -96,7 +96,7 @@ client.on("message", async (msg) => {
         timestamp: new Date(),
         footer: {
           icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-          text: "Desenvolvido por Damasc010 - Pinhal Novo, pubicado "
+          text: "PN PoGo Raids, pubicado - Pinhal Novo, pubicado "
         }
 
       }
