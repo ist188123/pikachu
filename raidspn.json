@@ -238,5 +238,17 @@
       "fraco": "<:nevoeiro:496498604458901526><:chuva:496498756951343113>\n<:dark:496498046574788608> <:fantasma:496497975095328781> <:inseto:496497374219206656>",
       "counter": "Tyranitar SMACK DOWN - STONE EDGE\n"
   }
-    
+    ,
+
+  {
+      "nivel": "5",
+      "boss": "heatran",
+       "bosstipo":"<:fogo:496497692982116362>",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000069-d9360da31b/450/heatran.png",
+      "bosscp": "?",
+      "cpiv": "?/?",
+      "bosted":" <:sol:496498389685370930> ",
+      "fraco": "<:luta:496497074708414474><:ground:496497270661840924><:agua:496497618940329985>",
+      "counter": ""
+  }
 ]
