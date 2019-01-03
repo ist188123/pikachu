@@ -89,7 +89,15 @@
     {
         "cod": "aerodactyl",
         "quest": "AERODACTYL",
-        "missao": "Missão : chocar dois ovos.",
+        "missao": "Missão : ",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000065-9c9749d923/450/aerodactyl.png"
+   }
+    ,
+    
+    {
+        "cod": "marowak",
+        "quest": "MAROWAK",
+        "missao": "Missão : ",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000065-9c9749d923/450/aerodactyl.png"
    }
 
