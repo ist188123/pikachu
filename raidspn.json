@@ -251,4 +251,30 @@
       "fraco": "<:luta:496497074708414474><:ground:496497270661840924><:agua:496497618940329985>",
       "counter": "Groudon Mud shot - Earthquake\nRhyperior Mud-slap - earthquake\nKyogre Waterfall - Hydro Pump\nSwampert Mud shot - Earthquake\nDisponviel em Raids até 15 de janeiro"
   }
+    ,
+
+  {
+      "nivel": "5",
+      "boss": "groundon",
+       "bosstipo":"<:fogo:496497692982116362>",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000072-3aa6d3ba0d/450/Groudon.png",
+      "bosscp": "49671",
+      "cpiv": "2351/2939",
+      "bosted":" <:sol:496498389685370930>",
+      "fraco": "<:luta:496497074708414474><:ground:496497270661840924><:agua:496497618940329985>",
+     "counter": "Gyarados Waterfall - Hydro Pump\nMewtwo Psycho cut - Ice Beam\nDisponviel em Raids 15 a 29 de janeiro"
+  }
+    ,
+
+  {
+      "nivel": "5",
+      "boss": "kyogre",
+       "bosstipo":"<:agua:496497618940329985>",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000073-b1ccbb2c4a/450/kyogre.png",
+      "bosscp": "49671",
+      "cpiv": "2351/2939",
+      "bosted":" <:chuva:496498756951343113>",
+      "fraco": "<:luta:496497074708414474><:ground:496497270661840924><:agua:496497618940329985>",
+      "counter": "Raikou THUNDER SHOCK - WILD CHARGE\nElective THUNDER SHOCK - WILD CHARGE\n\nDisponviel em Raids 15 a 29 de janeiro"
+  }
 ]
