@@ -277,4 +277,17 @@
       "fraco": "<:luta:496497074708414474><:ground:496497270661840924><:agua:496497618940329985>",
       "counter": "Raikou THUNDER SHOCK - WILD CHARGE\nElective THUNDER SHOCK - WILD CHARGE\n\nDisponviel em Raids 15 a 29 de janeiro"
   }
+    ,
+
+  {
+      "nivel": "5",
+      "boss": "palkia",
+       "bosstipo":"<:drago:496497770476077066>",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000074-eae40ebe53/450/palkia.png",
+      "bosscp": "50019",
+      "cpiv": "2280/2850",
+      "bosted":"<:vento:496499092969750561> <:chuva:496498756951343113>",
+      "fraco": "<:drago:496497770476077066><:fada:496497845952839692>",
+      "counter": "Rayquaza dragon tail- outrage\nDragonite dragon tail- outrage\nSalamence dragon tail - drago meteor\nLatios dragon breth - dragon claw\nDisponviel em Raids 29 janeiro a 28 de fevereiro"
+  }
 ]
