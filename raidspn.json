@@ -290,4 +290,17 @@
       "fraco": "<:drago:496497770476077066><:fada:496497845952839692>",
       "counter": "Rayquaza dragon tail- outrage\nDragonite dragon tail- outrage\nSalamence dragon tail - drago meteor\nLatios dragon breth - dragon claw\nDisponviel em Raids 29 janeiro a 28 de fevereiro"
   }
+    ,
+
+  {
+      "nivel": "5",
+      "boss": "dialga",
+       "bosstipo":"<:drago:496497770476077066>",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000075-4d22c4e25d/450/pokemon_icon_483_00.png",
+      "bosscp": "53394",
+      "cpiv": "2307/2884",
+      "bosted":"<:vento:496499092969750561> <:neve:496498677590917120>",
+      "fraco": "<:ground:496497270661840924> <:luta:496497074708414474>",
+      "counter": "Machamp counter- Dynamic Punch\nBreloom counter - Dynamic Punch\nHariyama dcounter- Dynamic Punch\nGroudon Mud shot - Earthquake \nDisponviel em Raids 01 março a 28 de março"
+  }
 ]
