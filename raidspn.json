@@ -303,4 +303,17 @@
       "fraco": "<:ground:496497270661840924> <:luta:496497074708414474>",
       "counter": "Machamp counter- Dynamic Punch\nBreloom counter - Dynamic Punch\nHariyama dcounter- Dynamic Punch\nGroudon Mud shot - Earthquake \nDisponviel em Raids 01 março a 28 de março"
   }
+    ,
+
+  {
+      "nivel": "5",
+      "boss": "latios",
+       "bosstipo":"<:drago:496497770476077066>",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000076-2807e29009/450/latios.png",
+      "bosscp": "52220",
+      "cpiv": "2178/2723",
+      "bosted":"<:vento:496499092969750561> <:neve:496498677590917120>",
+      "fraco": "<:ground:496497270661840924> <:luta:496497074708414474>",
+       "counter": "Rayquaza dragon tail- outrage\nDragonite dragon tail- outrage\nSalamence dragon tail - drago meteor\nLatios dragon breth - dragon claw"
+  }
 ]
