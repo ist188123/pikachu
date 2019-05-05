@@ -547,14 +547,12 @@ var add_minutes =  function (dt, minutes) {
 
 var mzero= function(mzero){
     console.log("mzero="+mzero)
-   if(Number.isInteger(Number(mzero))){
-    if(mzero<10){
+   
+    if(mzero<2){
         mzero="0"+mzero
-        console.log("mzero com zero="+mzero)
+       
     }
-}else{
-    return false;
-}
+
     return mzero;
 
     }
@@ -581,7 +579,8 @@ var mzero= function(mzero){
 var text = text.replace(/[`~@#$%^&*()_|=?;:'",.<>\{\}\[\]\\\/]/gi, '');
 text = text.replace(/\s\s+/g, ' ');;
 
-if(af_tempo.length>3) {
+
+  if(!Number.isInteger(Number(af_tempo))){
   msg.channel.send({embed: {
   color: 3447003,
   description: "Necessario inserir o tempo da raid\nExemplo:\nFaltam 10 minutos para abrir o Ovo\n"+text+" 10\nJá está aberta faltam 20 minutos para acabar\n"+text+" -20"
