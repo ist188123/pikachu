@@ -527,7 +527,7 @@ client.on("message", async (msg) => {
       
       
       //LE A MENSAGEM EXCLUINDO O !
-      text = text.replace(/[`~@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
+     var text = text.replace(/[`~@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
       text = text.replace(/\s\s+/g, ' ');;
 
 
