@@ -14,36 +14,6 @@ var tamanhoFicheiroQuest = Object.keys(questMap).length;
 
 
 
-var dia =  function (dt) {
-    var d =  new Date(dt.getTime()),
-    dformat = [mzero(d.getDate()),
-        mzero(d.getMonth())+1,
-           d.getFullYear()].join('-');
-
-           return dformat;
-}
-
-var add_minutes =  function (dt, minutes) {
-    var d =  new Date(dt.getTime() + minutes*60000),
-    dformat =  [mzero(d.getHours()),
-           mzero(d.getMinutes())].join(':');
-
-           return dformat;
-}
-
-var mzero= function(mzero){
-    console.log("mzero="+mzero)
-    if(mzero<2){
-        mzero="0"+mzero
-        console.log("mzero com zero="+mzero)
-    }
-    return mzero;
-    }
-
-
-
-
-
 
 
 
@@ -553,17 +523,7 @@ client.on("message", async (msg) => {
 
       var text = msg.content.substring(1);
       
-      var af_tempo=text.split(' ')[text.split(' ').length-1];
-      
-      //erro
-if(af_tempo.length>3) {
-    
-    
-    
-   
-    return false;
-}
-      
+     
       
       
       //LE A MENSAGEM EXCLUINDO O !
