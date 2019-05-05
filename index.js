@@ -557,8 +557,17 @@ client.on("message", async (msg) => {
       
       //erro
 if(af_tempo.length>3) {
-    console.log("Necessario inserir o tempo da raid\nExemplo:\nFaltam 10 minutos para abrir o Ovo\n"+text+" 10\nJá está aberta faltam 20 minutos para acabar\n"+text+" -20")
-
+    
+    
+    //mensgem
+    
+   msg.channel.send({embed: {
+  color: 3447003,
+  description: "Necessario inserir o tempo da raid\nExemplo:\nFaltam 10 minutos para abrir o Ovo\n"+text+" 10\nJá está aberta faltam 20 minutos para acabar\n"+text+" -20"
+}});
+    
+   
+   
     return false;
 }
       
