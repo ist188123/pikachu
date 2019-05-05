@@ -528,11 +528,16 @@ var add_minutes =  function (dt, minutes) {
 
 var mzero= function(mzero){
     console.log("mzero="+mzero)
-    if(mzero<2){
+   if(Number.isInteger(Number(mzero))){
+    if(mzero<10){
         mzero="0"+mzero
         console.log("mzero com zero="+mzero)
     }
+}else{
+    return false;
+}
     return mzero;
+
     }
 
 
