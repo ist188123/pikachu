@@ -394,13 +394,19 @@ client.on("message", async (msg) => {
       }
 
 
-      var hinicio="";
-      var hfim="";
+      //var hinicio="";
+     // var hfim="";
       var hovo=""
       
       
       
-      
+      var choca=aberta_fechada
+       // 10h
+       // o 10h30
+       //-15
+       var hinicio=add_minutes(new Date(), choca).toString();
+       var hfim=choca+45;
+
       
       
       //----- novo 
