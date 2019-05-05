@@ -503,7 +503,7 @@ client.on("message", async (msg) => {
        */
       .setTimestamp()
       .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-      .addField("Abre: "+hinicio +" Termina: " +hfim, hovo)
+      
       .addField("BOSS CP " + cpboss, cpiv)
 
       /*
