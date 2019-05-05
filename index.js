@@ -486,7 +486,7 @@ client.on("message", async (msg) => {
 
     //msg.reply("disparaRaid");
     const embed = new Discord.RichEmbed()
-      .setTitle(horas)
+      .setTitle(horas+"\n"+hinicio+" "+hfim +" "+hovo)
       .setAuthor(local.toUpperCase(), ovo)
 
       /*
