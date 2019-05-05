@@ -405,9 +405,9 @@ client.on("message", async (msg) => {
        // 10h
        // o 10h30
        //-15
-       var hovo=add_minutes(new Date(), choca).toString());
+       var hovo=add_minutes(new Date(), choca).toString();
        var hinicio=add_minutes(new Date(), choca).toString();
-       var hfim= add_minutes(new Date(), desaparece).toString()
+       var hfim= add_minutes(new Date(), desaparece).toString();
 
       
       
