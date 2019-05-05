@@ -30,15 +30,15 @@ client.on("message", async (msg) => {
   let adicional = "";
 
 
-  let team_mystic = msg.guild.roles.find("name", "TREINADOR");
-  let team_valor = msg.guild.roles.find("name", "TREINADOR");
-  let team_instinct = msg.guild.roles.find("name", "TREINADOR");
+  let team_mystic = msg.guild.roles.find("name", "mystic");
+  let team_valor = msg.guild.roles.find("name", "valor");
+  let team_instinct = msg.guild.roles.find("name", "instinct");
 
   //imagens equipas
   let team_imagem = "";
   const valor = client.emojis.find("name", "valor");
-  const mystic = client.emojis.find("name", "valor");
-  const instinct = client.emojis.find("name", "valor");
+  const mystic = client.emojis.find("name", "mystic");
+  const instinct = client.emojis.find("name", "instinct");
 
 
   //---------------------------------------------------	
