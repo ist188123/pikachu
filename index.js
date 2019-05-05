@@ -383,8 +383,8 @@ client.on("message", async (msg) => {
       var titulo = "RAID " + canalRaid.substr(5);
 
       var thoras = titulo.split("-");
-      var horas = thoras[thoras.length - 1];
-
+      var horas = thoras[thoras.length - 2];
+      var aberta_fechada = thoras[thoras.length - 1];//estado da raid
       y = thoras;
       var local = "";
 
@@ -393,8 +393,18 @@ client.on("message", async (msg) => {
 
       }
 
-      //----- novo 
 
+      var hinicio="";
+      var hfim="";
+      var hovo=""
+      
+      
+      
+      
+      
+      
+      //----- novo 
+  
 
       var raids = jsonData.map(x => x)
       var tamanhoFicheiro = Object.keys(raids).length;
@@ -448,7 +458,7 @@ client.on("message", async (msg) => {
       //----  FIM TIPO RAID ---
 
 
-      disparaRaid(local, horas, canalRaid, adicional, participantesRaid, ovo, braid, cpiv, status, adicional, bosscp);
+      disparaRaid(local, horas, canalRaid, adicional, participantesRaid, ovo, braid, cpiv, status, adicional, bosscp,hinicio,hfim,hovo);
       //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
 
     } catch (err) {
@@ -466,7 +476,7 @@ client.on("message", async (msg) => {
 
 
 
-  function disparaRaid(local, horas, canal, treinadores, total, ovo, bicho, cpiv, status, adicional, cpboss) {
+  function disparaRaid(local, horas, canal, treinadores, total, ovo, bicho, cpiv, status, adicional, cpboss,hinicio,hfim,hovo) {
 
     //msg.reply("disparaRaid");
     const embed = new Discord.RichEmbed()
