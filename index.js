@@ -379,7 +379,7 @@ client.on("message", async (msg) => {
       //-------
       
        //-------
-  //    var titulo = "RAID " + canalRaid.substr(5);
+     var titulo = "RAID " + canalRaid.substr(5);
 var tiporaid = canalRaid.substring(5, 6);
 //verifica se o numero é positivo ou negarivo
 var thoras = titulo.split("-");
@@ -413,14 +413,14 @@ for (var i = 0; i < thoras.length-3; i++) {
     
   
   }
- var titulo = "RAID " + titulo_raid;
+ 
 //console.log("Ntitulo "+titulo_raid)
 
 //-----------
 
 y = thoras;
 
-
+var local="";
 //console.log ("aberta_fechada: "+minutos_abrir_aberta);
 
 var choca=minutos_abrir_aberta;
