@@ -535,7 +535,7 @@ var hfim=add_minutes(date, desaparece).toString()
     //msg.reply("disparaRaid");
     const embed = new Discord.RichEmbed()
       .setTitle(horas)
-      .setAuthor(local.toUpperCase(), ovo)
+      .setAuthor("dddd" +local.toUpperCase(), ovo)
 
       /*
       * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
