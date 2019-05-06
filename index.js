@@ -413,7 +413,7 @@ for (var i = 0; i < thoras.length-3; i++) {
     
   
   }
-
+var titulo = "RAID " + titulo_raid;
 //console.log("Ntitulo "+titulo_raid)
 
 //-----------
