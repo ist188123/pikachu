@@ -552,7 +552,7 @@ var hfim=add_minutes(date, desaparece).toString()
       .setTimestamp()
       .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
       
-      .addField("Abre: "+hinicio+" Termina :"+hfim +" "+hovo\n"+BOSS CP " + cpboss, cpiv)
+      .addField("Abre: "+hinicio+" Termina :"+hfim +" "+hovo+"\nBOSS CP " + cpboss, cpiv)
 
       /*
        * lista dos jogadores que vão RAID.
