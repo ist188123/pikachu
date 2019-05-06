@@ -420,7 +420,7 @@ for (var i = 0; i < thoras.length-3; i++) {
 
 y = thoras;
 
-var local="";
+var local=titulo_raid;
 //console.log ("aberta_fechada: "+minutos_abrir_aberta);
 
 var choca=minutos_abrir_aberta;
