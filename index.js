@@ -616,7 +616,8 @@ var validaNumero=function(num){
 
 
 //meter a hora do relogio
- var relogio=add_minutes(new Date(),0)
+ var relogio=add_minutes(new Date(),0);
+ relogio=relogio.replace(":","h");
  nomecanal = nomecanal+"-"+relogio;
 
 
