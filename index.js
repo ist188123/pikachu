@@ -376,40 +376,86 @@ client.on("message", async (msg) => {
 
       cor = "0x00AE86";
 
-      //nivel da raid
-      var tiporaid = canalRaid.substring(5, 6);
-
-
+      //-------
+      
+       //-------
       var titulo = "RAID " + canalRaid.substr(5);
+var tiporaid = canalRaid.substring(5, 6);
+//verifica se o numero é positivo ou negarivo
+var thoras = titulo.split("-");
+       var horas = thoras[thoras.length - 3];
+var minutos_abrir_aberta = thoras[thoras.length - 2];
+if(minutos_abrir_aberta.startsWith("a")){
+    minutos_abrir_aberta=minutos_abrir_aberta.replace("a","");
+}else{
+    minutos_abrir_aberta=minutos_abrir_aberta.replace("f","-");
+}
 
-      var thoras = titulo.split("-");
-      var horas = thoras[thoras.length - 2];
-      var aberta_fechada = thoras[thoras.length - 1];//estado da raid
-      y = thoras;
-      var local = "";
+//--------------------------
 
-      for (var i = 0; i < y.length - 1; i++) {
-        local = local + " " + y[i]
+var horas_relogio=thoras[thoras.length - 1];
+horas_relogio=horas_relogio.replace("h",":")
 
-      }
+//tira o hora que foi marcada a raid do nome do canal
+var horas_relogio_horas_minutos=horas_relogio.split(":")
+var today = new Date();
+var date= new Date(today.getFullYear(), today.getMonth(), today.getDate(),horas_relogio_horas_minutos[0], horas_relogio_horas_minutos[1]);
+var dformat =  [mzero(date.getHours()),
+    mzero(date.getMinutes())].join(':');
+console.log("\\\\\\\\\\\\\\\\\\\\\\",dformat);
+//-----------------------------
 
+//cria o titulo da raid
+var titulo_raid=""
+for (var i = 0; i < thoras.length-3; i++) {
+    
+    titulo_raid = titulo_raid + " " + thoras[i]
+    
+  
+  }
 
-      //var hinicio="";
-     // var hfim="";
+console.log("Ntitulo "+titulo_raid)
+
+//-----------
+
+y = thoras;
+var local = "";
+
+//console.log ("aberta_fechada: "+minutos_abrir_aberta);
+
+var choca=minutos_abrir_aberta;
+ //console.log("hora atual: "+add_minutes(new Date(),0));
+//mais esta ouvo +30
+// menos esta aberta -30
+ //horas que abre o ovo
+       var abre=add_minutes(date, choca).toString();
+       console.log("Abre ovo : "+abre);
+      //-----------------------
+   var desaparece=  parseInt(choca)+45;
+
+ // console.log("tempo da raid "+ desaparece)
+      
+var hinicio=add_minutes(date, choca).toString();
+      var hovo=add_minutes(date, choca).toString();
+
+var hfim=add_minutes(date, desaparece).toString()
+      
+  //console.log("Termina : "+add_minutes(date, desaparece).toString());
+       
       
       
       
       
-      var choca=aberta_fechada
-      var desaparece=choca+45;
-       // 10h
-       // o 10h30
-       //-15
-       var hovo=add_minutes(new Date(), choca).toString();
-       var hinicio=add_minutes(new Date(), choca).toString();
-       var hfim= add_minutes(new Date(), desaparece).toString();
-
       
+      //-------
+      
+    
+      
+      
+      
+      
+      
+     
       
       //----- novo 
   
