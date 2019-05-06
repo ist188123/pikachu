@@ -414,7 +414,7 @@ for (var i = 0; i < thoras.length-3; i++) {
   
   }
 
-console.log("Ntitulo "+titulo_raid)
+//console.log("Ntitulo "+titulo_raid)
 
 //-----------
 
@@ -534,7 +534,7 @@ var hfim=add_minutes(date, desaparece).toString()
 
     //msg.reply("disparaRaid");
     const embed = new Discord.RichEmbed()
-      .setTitle(horas+"\n"+hinicio+" "+hfim +" "+hovo)
+      .setTitle(horas+"\nAbre: "+hinicio+" Termina :"+hfim +" "+hovo)
       .setAuthor(local.toUpperCase(), ovo)
 
       /*
