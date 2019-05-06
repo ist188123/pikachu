@@ -590,7 +590,8 @@ var validaNumero=function(num){
 
    var divide_texto=text.split(' ');
    var tempo_falta=validaNumero(divide_texto[divide_texto.length-1])
-
+   text=text.substring(0,text.length-divide_texto[divide_texto.length-1].length)+" "+tempo_falta;
+   
    //console.log("Verifica se é numero tempo_falta "+tempo_falta)
            
    
