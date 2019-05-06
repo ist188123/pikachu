@@ -419,7 +419,7 @@ for (var i = 0; i < thoras.length-3; i++) {
 //-----------
 
 y = thoras;
-var local =titulo;
+
 
 //console.log ("aberta_fechada: "+minutos_abrir_aberta);
 
@@ -530,7 +530,7 @@ var hfim=add_minutes(date, desaparece).toString()
 
 
 
-  function disparaRaid(local, horas, canal, treinadores, total, ovo, bicho, cpiv, status, adicional, cpboss,hinicio,hfim,hovo) {
+  function disparaRaid(titulo, horas, canal, treinadores, total, ovo, bicho, cpiv, status, adicional, cpboss,hinicio,hfim,hovo) {
 
     //msg.reply("disparaRaid");
     const embed = new Discord.RichEmbed()
