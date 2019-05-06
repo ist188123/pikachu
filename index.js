@@ -535,7 +535,7 @@ var hfim=add_minutes(date, desaparece).toString()
     //msg.reply("disparaRaid");
     const embed = new Discord.RichEmbed()
       .setTitle(horas)
-      .setAuthor("dddd" +local.toUpperCase(), ovo)
+      .setAuthor(local.toUpperCase(), ovo)
 
       /*
       * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
@@ -552,7 +552,7 @@ var hfim=add_minutes(date, desaparece).toString()
       .setTimestamp()
       .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
       
-      .addField("BOSS CP " + cpboss, cpiv)
+      .addField("Abre: "+hinicio+" Termina :"+hfim +" "+hovo\n"+BOSS CP " + cpboss, cpiv)
 
       /*
        * lista dos jogadores que vão RAID.
