@@ -402,7 +402,7 @@ var today = new Date();
 var date= new Date(today.getFullYear(), today.getMonth(), today.getDate(),horas_relogio_horas_minutos[0], horas_relogio_horas_minutos[1]);
 var dformat =  [mzero(date.getHours()),
     mzero(date.getMinutes())].join(':');
-console.log("\\\\\\\\\\\\\\\\\\\\\\",dformat);
+
 //-----------------------------
 
 //cria o titulo da raid
@@ -665,6 +665,12 @@ var validaNumero=function(num){
       
   var dhlocal = new Date();
 var relogio=dhlocal.getHours().toLocaleString()+":"+dhlocal.getMinutes();
+      
+      msg.channel.send({embed: {
+  color: 3447003,
+ description: "new Date: "+dhlocal+"\nrelogio "+relogio
+}});
+      
 // var relogio=add_minutes(new Date(),0);
  relogio=relogio.replace(":","h");
  nomecanal = nomecanal+"-"+relogio;
