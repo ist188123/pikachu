@@ -664,11 +664,16 @@ var validaNumero=function(num){
 //meter a hora do relogio
       
   var dhlocal = new Date();
-var relogio=dhlocal.getHours().toLocaleString()+":"+dhlocal.getMinutes();
+      var data_local = dhlocal.getTimezoneOffset();
+      var horas_locais=dhlocal.getHours();
+ if(data_local==-60){
+       horas_locais=dhlocal.getHours()+1
+    }
+var relogio=horas_locais+":"+dhlocal.getMinutes();
       
       msg.channel.send({embed: {
   color: 3447003,
- description: "new Date: "+dhlocal+"\nrelogio "+relogio+"\nHora canal : "+horaCanal(0)
+ description: "new Date: "+dhlocal+"\nrelogio "+relogio+"\nHora canal : "
 }});
       
 // var relogio=add_minutes(new Date(),0);
