@@ -528,6 +528,7 @@ client.on("message", async (msg) => {
 
 //-------------------------
 
+
 var dia =  function (dt) {
     var d =  new Date(dt.getTime()),
     dformat = [mzero(d.getDate()),
@@ -546,9 +547,7 @@ var add_minutes =  function (dt, minutes) {
 }
 
 var mzero= function(mzero){
-    console.log("mzero="+mzero)
-   
-    if(mzero<2){
+      if(mzero<10){
         mzero="0"+mzero
        
     }
@@ -556,6 +555,21 @@ var mzero= function(mzero){
     return mzero;
 
     }
+
+var validaNumero=function(num){
+   if(Number(num)){
+    if(num<0){
+       num="f"+Math.abs(num); 
+    }else{
+        num="a"+Math.abs(num); 
+    }
+       return num
+    }else{
+        return false
+    }
+
+}
+
 
 
 
@@ -570,36 +584,52 @@ var mzero= function(mzero){
     if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
 
 
-
+//noovo...
       var text = msg.content.substring(1);
       
-     var af_tempo=text.split(' ')[text.split(' ').length-1];
 
-//LE A MENSAGEM EXCLUINDO O !
-var text = text.replace(/[`~@#$%^&*()_|=?;:'",.<>\{\}\[\]\\\/]/gi, '');
-text = text.replace(/\s\s+/g, ' ');;
+   var divide_texto=text.split(' ');
+   var tempo_falta=validaNumero(divide_texto[divide_texto.length-1])
+
+   //console.log("Verifica se é numero tempo_falta "+tempo_falta)
+           
+   
+
+    //LE A MENSAGEM EXCLUINDO O !
+    var text = text.replace(/[`~@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
+    text = text.replace(/\s\s+/g, ' ');;
 
 
-  if(!Number.isInteger(Number(af_tempo))){
-  msg.channel.send({embed: {
-  color: 3447003,
-  description: "Necessario inserir o tempo da raid\nExemplo:\nFaltam 10 minutos para abrir o Ovo\n"+text+" 10\nJá está aberta faltam 20 minutos para acabar\n"+text+" -20"
-}});
+
+    var canal = '_raid' + text
+
+    canal = canal.split('!').join('').toLowerCase();
+    var nomecanal = canal.split(' ').join('-').toLowerCase();
+    // msg.reply(nomecanal); 
+    nomecanal = nomecanal.replace(/--/gi, '-');
+
+
+//mete minutos positivo ou negativos
+
+//console.log("nome canal sem ver tempo e horas : "+nomecanal)
+
+
+//meter a hora do relogio
+ var relogio=add_minutes(new Date(),0)
+ nomecanal = nomecanal+"-"+relogio;
+
+
+
+
+  //if(!Number.isInteger(Number(af_tempo))){
+ // msg.channel.send({embed: {
+ // color: 3447003,
+ // description: "Necessario inserir o tempo da raid\nExemplo:\nFaltam 10 minutos para abrir o Ovo\n"+text+" 10\nJá está aberta faltam 20 minutos para acabar\n"+text+" -20"
+//}});
+ // return false;
+//}
+
     
-
-    return false;
-}
-
-      
-
-
-
-      var canal = '_raid' + text
-
-      canal = canal.split('!').join('').toLowerCase();
-      var nomecanal = canal.split(' ').join('-').toLowerCase();
-      // msg.reply(nomecanal); 
-      nomecanal = nomecanal.replace(/--/gi, '-');
 
       //msg.reply(nomecanal); 
       if (msg.guild.channels.find("name", nomecanal)) {
