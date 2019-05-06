@@ -531,10 +531,10 @@ var hfim=add_minutes(date, desaparece).toString()
 
 
   function disparaRaid(local, horas, canal, treinadores, total, ovo, bicho, cpiv, status, adicional, cpboss,hinicio,hfim,hovo) {
-
+//+"\nAbre: "+hinicio+" Termina :"+hfim +" "+hovo
     //msg.reply("disparaRaid");
     const embed = new Discord.RichEmbed()
-      .setTitle(horas+"\nAbre: "+hinicio+" Termina :"+hfim +" "+hovo)
+      .setTitle(horas)
       .setAuthor(local.toUpperCase(), ovo)
 
       /*
