@@ -662,7 +662,9 @@ var validaNumero=function(num){
 
 
 //meter a hora do relogio
- var relogio=add_minutes(new Date(),0);
+  var dhlocal = new Date();
+var relogio=dhlocal.getHours()+":"+dhlocal.getMinutes();
+// var relogio=add_minutes(new Date(),0);
  relogio=relogio.replace(":","h");
  nomecanal = nomecanal+"-"+relogio;
 
