@@ -429,7 +429,7 @@ var choca=minutos_abrir_aberta;
 // menos esta aberta -30
  //horas que abre o ovo
        var abre=add_minutes(date, choca).toString();
-       console.log("Abre ovo : "+abre);
+      // console.log("Abre ovo : "+abre);
       //-----------------------
    var desaparece=  parseInt(choca)+45;
 
@@ -530,7 +530,7 @@ var hfim=add_minutes(date, desaparece).toString()
 
 
 
-  function disparaRaid(titulo, horas, canal, treinadores, total, ovo, bicho, cpiv, status, adicional, cpboss,hinicio,hfim,hovo) {
+  function disparaRaid(local, horas, canal, treinadores, total, ovo, bicho, cpiv, status, adicional, cpboss,hinicio,hfim,hovo) {
 
     //msg.reply("disparaRaid");
     const embed = new Discord.RichEmbed()
