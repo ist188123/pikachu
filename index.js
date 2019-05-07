@@ -667,7 +667,7 @@ var validaNumero=function(num){
       var data_local = dhlocal.getTimezoneOffset();
       var horas_locais=dhlocal.getHours()+1;
  
-      horaCanal
+      
 var relogio=horas_locais+":"+dhlocal.getMinutes();
      
       
