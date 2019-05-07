@@ -673,7 +673,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
       
       msg.channel.send({embed: {
   color: 3447003,
- description: "new Date: "+dhlocal+"\nrelogio "+relogio+"\ndata local : "+nomecanal
+ description: "new Date: "+dhlocal+"\nrelogio "+relogio+"\ndata local : "+tempo_falta
 }});
       
 // var relogio=add_minutes(new Date(),0);
