@@ -86,7 +86,7 @@ client.on("message", async (msg) => {
     msg.guild.channels.find("name", arg).sendMessage({
       embed: {
         color: 16580627,
-        title: "Olá Treinadores\nEste canal é temporário e será apagado às " + horaCanal('+2.5'),
+        title: "Olá Treinadores\nEste canal é temporário e será apagado às " + horaCanal('+3.5'),
         description: "Para mais informação consultar " + msg.guild.channels.find("name", "tutorial-raids"),
 
 
