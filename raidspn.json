@@ -316,4 +316,17 @@
       "fraco": "<:ground:496497270661840924> <:luta:496497074708414474>",
        "counter": "Rayquaza dragon tail- outrage\nDragonite dragon tail- outrage\nSalamence dragon tail - drago meteor\nLatios dragon breth - dragon claw"
   }
+    ,
+
+  {
+      "nivel": "5",
+      "boss": "mesprit",
+       "bosstipo":"<:fantasma:496497975095328781>",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000077-b3b25b4a6a/450/mesprit.png",
+      "bosscp": "41887",
+      "cpiv": "1747 - 2184",
+      "bosted":"<:vento:496499092969750561>",
+      "fraco": "<:ground:496497270661840924> <:luta:496497074708414474>",
+       "counter": "Genger\nShadow Claw - Shadow ball\nGiratina Origin\nShadow Claw - Shadow ball\nMewtwo \nPsycho Cut - Shadow ball\nTyrantiar\nBite - Crunch\nDisponviel em Raids até 27 de maio"
+  }
 ]
