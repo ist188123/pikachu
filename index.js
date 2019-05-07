@@ -670,11 +670,9 @@ var validaNumero=function(num){
       
 var relogio=horas_locais+":"+dhlocal.getMinutes();
      
-      
-      msg.channel.send({embed: {
-  color: 3447003,
- description: "new Date: "+dhlocal+"\nrelogio "+relogio+"\ndata local : "+tempo_falta
-}});
+      if(tempo_falta!=false){
+        
+     
       
 // var relogio=add_minutes(new Date(),0);
  relogio=relogio.replace(":","h");
@@ -682,16 +680,6 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
 
 
 
-
-  //if(!Number.isInteger(Number(af_tempo))){
- // msg.channel.send({embed: {
- // color: 3447003,
- // description: "Necessario inserir o tempo da raid\nExemplo:\nFaltam 10 minutos para abrir o Ovo\n"+text+" 10\nJá está aberta faltam 20 minutos para acabar\n"+text+" -20"
-//}});
- // return false;
-//}
-
-    
 
       //msg.reply(nomecanal); 
       if (msg.guild.channels.find("name", nomecanal)) {
@@ -704,7 +692,21 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
       //
       setTimeout(apagacanal, 4580000, nomecanal);
       setTimeout(myFunc, 1500, nomecanal);
-
+        
+        
+      }else{
+        
+         msg.channel.send({embed: {
+  color: 3447003,
+ description: "ATENÇÃO:\nNecessário inserir o tempo que falta para a RAID\nExemplo:Raid aberta:\n!5 piscinas !09h30 12\nAberta a 12 minutos\nRaid com o Ovo:\n!5 piscinas !09h30 -12\nFalta 12 minutos para abrir o Ovo"
+}});
+        
+        
+        
+      }
+      
+      
+      
     }   // fim do inicio carater
 //fim criação de RAID PROFESSOR BOSS
 
