@@ -665,11 +665,11 @@ var validaNumero=function(num){
       
   var dhlocal = new Date();
       var data_local = dhlocal.getTimezoneOffset();
-      var horas_locais=dhlocal.getHours();
+      var horas_locais=dhlocal.getHours()+1;
  
       horaCanal
-//var relogio=horas_locais+":"+dhlocal.getMinutes();
-      var relogio=horaCanal(0);
+var relogio=horas_locais+":"+dhlocal.getMinutes();
+     
       
       msg.channel.send({embed: {
   color: 3447003,
