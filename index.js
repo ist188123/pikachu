@@ -673,7 +673,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
       
       msg.channel.send({embed: {
   color: 3447003,
- description: "new Date: "+dhlocal+"\nrelogio "+relogio+"\ndata local : ",timestamp: new Date()
+ description: "new Date: "+dhlocal+"\nrelogio "+relogio+"\ndata local : "+nomecanal
 }});
       
 // var relogio=add_minutes(new Date(),0);
@@ -706,7 +706,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
       setTimeout(myFunc, 1500, nomecanal);
 
     }   // fim do inicio carater
-
+//fim criação de RAID PROFESSOR BOSS
 
 
 
