@@ -666,10 +666,10 @@ var validaNumero=function(num){
   var dhlocal = new Date();
       var data_local = dhlocal.getTimezoneOffset();
       var horas_locais=dhlocal.getHours();
- if(data_local==-60){
-       horas_locais=dhlocal.getHours()+1
-    }
-var relogio=horas_locais+":"+dhlocal.getMinutes();
+ 
+      horaCanal
+//var relogio=horas_locais+":"+dhlocal.getMinutes();
+      var relogio=horaCanal(0);
       
       msg.channel.send({embed: {
   color: 3447003,
