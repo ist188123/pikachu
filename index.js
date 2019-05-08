@@ -686,7 +686,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
       } else {
 
         msg.guild.createChannel(nomecanal, "text");
-
+        
 
       }
       //
