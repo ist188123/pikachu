@@ -889,8 +889,8 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
 
 
 
-      msg.guild.channels.find("name", "informacao").sendMessage({ embed });
-      msg.guild.channels.find("name", "chat").sendMessage({ embed });
+      msg.guild.channels.find("name", "🔔-informacao").sendMessage({ embed });
+      msg.guild.channels.find("name", "💬-chat-geral").sendMessage({ embed });
 
 
     }
