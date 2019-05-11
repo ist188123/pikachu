@@ -885,7 +885,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
         .setFooter("PN PoGo Raids, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
 
 
-        .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
+        .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000078-4d2264e1df/450/mboss.png")
 
         .setTimestamp();
 
