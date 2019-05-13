@@ -86,7 +86,7 @@ client.on("message", async (msg) => {
     msg.guild.channels.find("name", arg).sendMessage({
       embed: {
         color: 16580627,
-        title: "Olá Treinadores\nEste canal é temporário e será apagado às " + horaCanal('+4.5'),
+        title: "Olá Treinadores\nEste canal é temporário e será apagado às " + horaCanal('+2.5'),
         description: "Para mais informação consultar " + msg.guild.channels.find("name", "tutorial-raids"),
 
 
@@ -692,7 +692,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
 
       }
       //
-      setTimeout(apagacanal, 4580000, nomecanal);
+      setTimeout(apagacanal, 5000000, nomecanal);
       setTimeout(myFunc, 1500, nomecanal);
         
         
