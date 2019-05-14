@@ -721,15 +721,15 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
       msg.guild.channels.find("name", "professor-boss").sendMessage("Olá, " + msg.author + "\nAdicionado ás notificações da Quest de " + msg.content.substring(1) + ", no canal " + msg.guild.channels.find("name", "alertas"));
 
 
-      regra = msg.content.substring(1).toUpperCase();
-      role = msg.guild.roles.find(role => role.name === regra);
+      regra = msg.content.substring(1).toLowerCase();
+      role = msg.guild.roles.find(role => role.name.toLowerCase() === regra);
       msg.member.addRole(role);
 
     }
 
     if (msg.content.startsWith('-')) {
-      regra = msg.content.substring(1).toUpperCase();
-      role = msg.guild.roles.find(role => role.name === regra);
+      regra = msg.content.substring(1).toLowerCase();
+      role = msg.guild.roles.find(role => role.name.toLowerCase() === regra);
       msg.member.removeRole(role);
       msg.guild.channels.find("name", "professor-boss").sendMessage("Olá, " + msg.author + "\nRemovido das notificações da Quest de " + msg.content.substring(1) + ", no canal " + msg.guild.channels.find("name", "alertas"));
 
