@@ -100,5 +100,12 @@
         "missao": "Missão : ",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000071-b8d40b9cea/450/marowak.png"
    }
-
+,
+    
+    {
+        "cod": "seel",
+        "quest": "SEEL",
+        "missao": "Missão : apanhar 5 pokemons do tipo agua",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000080-0eb570fa1f/450/seal.png"
+   }
 ]
