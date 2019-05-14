@@ -717,6 +717,9 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
     //---inicio regras
     var regra = "";
     var role = "";
+    if (msg.content.toLowerCase().startsWith('+pnpogoraids') || msg.content.toLowerCase().startsWith('+treinador') ||msg.content.toLowerCase().startsWith('+su') || msg.content.toLowerCase().startsWith('+bot') || msg.content.toLowerCase().startsWith('+4fun')|| msg.content.toLowerCase().startsWith('+deoxys')) {
+       msg.guild.channels.find("name", "professor-boss").sendMessage("Olá, " + msg.author + "\nEssa regra não pode ser associada ao teu utilizador");
+    }else{
     if (msg.content.startsWith('+')) {
       msg.guild.channels.find("name", "professor-boss").sendMessage("Olá, " + msg.author + "\nAdicionado ás notificações da Quest de " + msg.content.substring(1) + ", no canal " + msg.guild.channels.find("name", "alertas"));
 
@@ -735,7 +738,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
 
     }
 
-
+    }
     // FIM ADICIONAR REGRAS TREINADORES
 
     //----
