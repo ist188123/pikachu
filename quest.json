@@ -108,4 +108,12 @@
         "missao": "Missão : apanhar 5 pokemons do tipo agua",
         "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000080-0eb570fa1f/450/seal.png"
    }
+    ,
+    
+    {
+        "cod": "bronzel",
+        "quest": "BRONZEL",
+        "missao": "Missão : ganhar uma raid",
+        "questimagem": "https://exraidspinhalnovo.webnode.pt/_files/200000081-91d4692c4c/450/bronzel.png"
+   }
 ]
