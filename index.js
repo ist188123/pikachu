@@ -780,8 +780,8 @@ let poketstop = findpoketstop.substring(findpoketstop.split(" ")[0].length,findp
             for ( a=0; a<pkstMap.length;a++){
               lerpkt=pkstMap[a].cod.toLocaleLowerCase();
                 if(lerpkt.includes(poketstop)){
-			if (lerpkt.startsWith('http')) {
-		             pkstQuest=lerpkt;
+			if (pkstMap[a].local.toLocaleLowerCase().startsWith('http')) {
+		             pkstQuest=pkstMap[a].local.toLocaleLowerCase();
 		         }
                     
                     
