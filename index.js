@@ -785,7 +785,7 @@ let poketstop = findpoketstop.substring(findpoketstop.split(" ")[0].length,findp
                     //console.log(lerpkt)
                     //console.log(pkstQuest)
                 }
-                
+		}
             }
             
         });
