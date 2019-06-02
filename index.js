@@ -698,7 +698,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
         
          msg.channel.send({embed: {
   color: 3447003,
- description: "ATENÇÃO:\nNecessário inserir o tempo que falta para a RAID\nExemplo:Raid aberta:\n!5 piscinas !09h30 12\nAberta a 12 minutos\nRaid com o Ovo:\n!5 piscinas !09h30 -12\nFalta 12 minutos para abrir o Ovo"
+ description: "ATENÇÃO:\nNecessário inserir o tempo que falta para a RAID\nExemplo: Raid aberta a 12 minutos:\n!5 piscinas !09h30 -12\nRaid com o Ovo 12 minutos para abrir:\n!5 piscinas !09h30 12\n"
 }});
         
         
