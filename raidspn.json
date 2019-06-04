@@ -330,5 +330,18 @@
       "fraco": "<:ground:496497270661840924> <:luta:496497074708414474>",
        "counter": "Genger\nShadow Claw - Shadow ball\nGiratina Origin\nShadow Claw - Shadow ball\nMewtwo \nPsycho Cut - Shadow ball\nTyrantiar\nBite - Crunch\nDisponviel em Raids até 27 de maio"
   }
+     ,
+
+  {
+      "nivel": "5",
+      "boss": "deoxys",
+       "bosstipo":"<:psiquico:478587230483513346>",
+      "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000070-3176032714/450/deoxysattack.png",
+      "bosscp": "41887",
+      "cpiv": "1299 - 1624",
+      "bosted":"<:vento:496499092969750561>",
+      "fraco": "<:ground:496497270661840924> <:luta:496497074708414474>",
+       "counter": "**EX-RAID**\nTyranitar Byte - Crunch\nMewtwo Psycho Cut - Shadow Ball"
+  }
     
 ]
