@@ -422,6 +422,9 @@ var local=titulo_raid;
 //console.log ("aberta_fechada: "+minutos_abrir_aberta);
 
 var choca=minutos_abrir_aberta;
+if(parseInt(choca)<0){
+    choca=-(45+parseInt(choca))
+}	    
  //console.log("hora atual: "+add_minutes(new Date(),0));
 //mais esta ouvo +30
 // menos esta aberta -30
