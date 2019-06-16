@@ -39,6 +39,24 @@ client.on("message", async (msg) => {
   const instinct = client.emojis.find("name", "instinct");
 
 
+	
+	
+function leinforaid(pCode, cb) {  //leraud
+
+    http.request(pCode).on('response', function (response) {
+        var data = '';
+        response.on("data", function (chunk) {
+            data += chunk;
+        });
+        response.on('end', function () {
+            var pCJSON = JSON.parse(data);
+            cb(pCJSON);
+
+        });
+    }).end();
+}
+	
+	
   //---------------------------------------------------	
   //informação 	
   //---------------------------------------------------	
@@ -752,125 +770,79 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
 
 
 //---------------  
-	
-	  
-var pkendereco='http://pnraidspn.atwebpages.com/poketstop.php'
-//var jsonData = require('./raidspn.json');
+ var mensagem=msg.content
+    var find = ""//mensagem.split(" ")[1].toLocaleLowerCase()
+    var pokemon=mensagem.split(" ")[0].substring(1)
+    console.log(pokemon)
+    for (x = 1; x < mensagem.split(" ").length ; x++) {
+        find = find + mensagem.split(" ")[x] + " "
+    }
 
+    var   quest="";
+   
+    var missao="";  
+    var questimagem="";  
 
-
-var pkstQuest="http://pokemongo.pt";
-var findpoketstop = msg.content.substring(1);
-
-
-let poketstop = findpoketstop.substring(findpoketstop.split(" ")[0].length,findpoketstop.length).trim().toLocaleLowerCase()
-
-
-
-    let reqpkst = http.get(pkendereco, function(res) {
-        let datapkst = ''
-            
+    console.log(find.toUpperCase())
+              
     
-        res.on('data', function(stream) {
-          datapkst += stream;
-        });
-
-        res.on('end', function() {
-            pkstMap = JSON.parse(datapkst);
-            
-            // will output a Javascript object
-            var lerpkt="";
-            for ( a=0; a<pkstMap.length;a++){
-              lerpkt=pkstMap[a].cod.toLocaleLowerCase();
-                if(lerpkt.includes(poketstop)){
-                  if (pkstMap[a].local.startsWith('http')) {
-                    pkstQuest=pkstMap[a].local;
-                    //console.log(lerpkt)
-                    //console.log(pkstQuest)
-                }
-		}
+    async function getQuest(endereco,qualPokemon) {
+       
+       
+        var achou=false;
+        var result = await leinforaid(endereco, async function (pCLatLng) {
+            pCLatLng.forEach(nivel => {
+       console.log(nivel.cod)
+      console.log( "------>>>>",qualPokemon.toUpperCase())
+                if(nivel.cod.toUpperCase().includes(qualPokemon.toUpperCase())){
+                    achou=true;
+                    quest = nivel.quest;
+                    missao = nivel.missao;
+                    questimagem = nivel.questimagem;
+               
             }
+            })
+            console.log(achou)
+           if(achou){
             
-        });
-    });
-
-
-	  
-	  
-	//----------------  
-	  
-      var endereco='http://pnraidspn.atwebpages.com/teste.php'
-
-      var dmsg = msg.content.substring(1);
-
-
-      let cod = dmsg.split(" ")[0];
-
-      let pokestop = dmsg.split(" ").slice(1).join(" ");
-      let quest = "";
-      let missao = "";
-      let questimagem = "";
-  
-  let req = http.get(endereco, function(res) {
-        let data = '',
-            questMap;
-    
-        res.on('data', function(stream) {
-            data += stream;
-        });
-        res.on('end', function() {
-            questMap = JSON.parse(data);
-    
-             for (var x = 0; x < questMap.length; x++) {
-
-        if (cod == questMap[x].cod) {
-          quest = questMap[x].quest;
-          missao = questMap[x].missao;
-          questimagem = questMap[x].questimagem;
-         
-		
-		
-		 
-		
-		
-         //--
-          const embed = new Discord.RichEmbed()
-    .setTitle("Direcção para " +pokestop)
-   .setURL(pkstQuest)
-    .setAuthor(pokestop, "https://exraidspinhalnovo.webnode.pt/_files/200000083-e9b0feaad1/450/pkst.png")
-    /*
-     * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-     */
-    .setColor(0x00AE86)
-    .setDescription(" ")
-     .setFooter("PN PoGo Raids, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
-    
-       .setThumbnail(questimagem)
-	  .addField('Missão', missao, false)
-	.addField('Recompensa', quest, false)
-	  .addField('Reportado por:', msg.author.username, false)
-	  .setURL(pkstQuest)
-    /*
-     * Takes a Date object, defaults to current date.
-     */
-    .setTimestamp();
-    msg.guild.channels.find("name", "quest").sendMessage({ embed }); 
-          //---
-          
-          // - - messagem
-          //.setAuthor(quest, 'https://exraidspinhalnovo.webnode.pt/_files/200000083-e9b0feaad1/450/pkst.png')
-	
-	//  .setFooter("PN PoGo Raids, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
-     
-     
-         // -- fim mensagem 
-         
-        }
-      }
-
+            //--
+            const embed = new Discord.RichEmbed()
+            .setTitle("Direcção para " +pokestop)
+           .setURL(pkstQuest)
+            .setAuthor(pokestop, "https://exraidspinhalnovo.webnode.pt/_files/200000083-e9b0feaad1/450/pkst.png")
+            /*
+             * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+             */
+            .setColor(0x00AE86)
+            .setDescription(" ")
+             .setFooter("PN PoGo Raids, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
             
-        });
-    });
+               .setThumbnail(questimagem)
+              .addField('Missão', missao, false)
+            .addField('Recompensa', quest, false)
+              .addField('Reportado por:', msg.author.username, false)
+              .setURL(pkstQuest)
+            /*
+             * Takes a Date object, defaults to current date.
+             */
+            .setTimestamp();
+            msg.guild.channels.find("name", "quest").sendMessage({ embed }); 
+            
+           }else{
+            msg.channel.send({
+                embed: {
+                    color: 3447003,
+                    description: "O Quest "+qualPokemon+" não foi encontrado!"
+                }
+            });
+               
+           }
+            
+        })
+    }
+    
+    getQuest('http://pnraidspn.atwebpages.com/teste.php',pokemon)
+
    //----fim quest 
 	  
 
