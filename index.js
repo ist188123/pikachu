@@ -766,7 +766,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
 
 
 //quest
-    if (msg.content.startsWith('!')) {
+    if (msg.content.startsWith('!q')) {
 
 
 //---------------  
