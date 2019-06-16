@@ -772,9 +772,9 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
 //---------------  
  var mensagem=msg.content
     var find = ""//mensagem.split(" ")[1].toLocaleLowerCase()
-    var pokemon=mensagem.split(" ")[0].substring(1)
+     var pokemon=mensagem.split(" ")[1]
    
-    for (x = 1; x < mensagem.split(" ").length ; x++) {
+    for (x = 2; x < mensagem.split(" ").length ; x++) {
         find = find + mensagem.split(" ")[x] + " "
     }
 
