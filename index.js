@@ -773,7 +773,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
  var mensagem=msg.content
     var find = ""//mensagem.split(" ")[1].toLocaleLowerCase()
     var pokemon=mensagem.split(" ")[0].substring(1)
-    console.log(pokemon)
+   
     for (x = 1; x < mensagem.split(" ").length ; x++) {
         find = find + mensagem.split(" ")[x] + " "
     }
@@ -792,8 +792,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
         var achou=false;
         var result = await leinforaid(endereco, async function (pCLatLng) {
             pCLatLng.forEach(nivel => {
-       console.log(nivel.cod)
-      console.log( "------>>>>",qualPokemon.toUpperCase())
+      
                 if(nivel.cod.toUpperCase().includes(qualPokemon.toUpperCase())){
                     achou=true;
                     quest = nivel.quest;
@@ -802,14 +801,14 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
                
             }
             })
-            console.log(achou)
+           
            if(achou){
             
             //--
             const embed = new Discord.RichEmbed()
-            .setTitle("Direcção para " +pokestop)
-           .setURL(pkstQuest)
-            .setAuthor(pokestop, "https://exraidspinhalnovo.webnode.pt/_files/200000083-e9b0feaad1/450/pkst.png")
+            .setTitle("Direcção para " +find)
+           .setURL("https://exraidspinhalnovo.webnode.pt/_files/200000083-e9b0feaad1/450/pkst.png")
+            .setAuthor(find, "https://exraidspinhalnovo.webnode.pt/_files/200000083-e9b0feaad1/450/pkst.png")
             /*
              * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
              */
@@ -821,7 +820,7 @@ var relogio=horas_locais+":"+dhlocal.getMinutes();
               .addField('Missão', missao, false)
             .addField('Recompensa', quest, false)
               .addField('Reportado por:', msg.author.username, false)
-              .setURL(pkstQuest)
+              .setURL("https://exraidspinhalnovo.webnode.pt/_files/200000083-e9b0feaad1/450/pkst.png")
             /*
              * Takes a Date object, defaults to current date.
              */
