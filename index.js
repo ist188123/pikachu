@@ -488,7 +488,7 @@ function leinforaid(pCode, cb) {  //leraud
                 
 
                 if (nivel.boss == bicho && nivel.nivel == tiporaid) {
-                    braid = nivel
+                   braid = nivel.boss;
                     cpiv = nivel.cpiv + " " + nivel.bosted;
                     bosscp = nivel.bosscp + " " + nivel.bosstipo;
                     status = nivel.fraco + "\n" + nivel.counter;
