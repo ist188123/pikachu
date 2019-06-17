@@ -380,9 +380,7 @@ function leinforaid(pCode, cb) {  //leraud
 
 
 
-
-
-        let bosscp = "";
+ let bosscp = "";
         var status = "Desconhecido";
         var cpiv = "Desconhecido"
 
@@ -391,6 +389,23 @@ function leinforaid(pCode, cb) {  //leraud
         //var bicho="";
 
         cor = "0x00AE86";
+
+
+        var result = await leinforaid('http://pnraidspn.atwebpages.com/raid.php', async function (pCLatLng) {
+            pCLatLng.forEach(nivel => {
+               
+
+                if (nivel.boss == bicho ) {
+                    tiporaid=nivel.nivel
+                    braid = nivel.boss
+                    cpiv = nivel.cpiv + " " + nivel.bosted;
+                    bosscp = nivel.bosscp + " " + nivel.bosstipo;
+                    status = nivel.fraco + "\n" + nivel.counter;
+                }
+
+
+
+            })
 
         //-------
 
@@ -483,21 +498,7 @@ function leinforaid(pCode, cb) {  //leraud
         }
 
 
-        var result = await leinforaid('http://pnraidspn.atwebpages.com/raid.php', async function (pCLatLng) {
-            pCLatLng.forEach(nivel => {
-                
-
-                if (nivel.boss == bicho && nivel.nivel == tiporaid) {
-                   braid = nivel.boss;
-                    cpiv = nivel.cpiv + " " + nivel.bosted;
-                    bosscp = nivel.bosscp + " " + nivel.bosstipo;
-                    status = nivel.fraco + "\n" + nivel.counter;
-                }
-
-
-
-            })
-
+       
 
             //--- fim novo          
 
