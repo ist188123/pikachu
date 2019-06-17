@@ -305,7 +305,7 @@ function leinforaid(pCode, cb) {  //leraud
           //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
 
           //------------------------     
-          setTimeout(function () {
+         
 
             pkmraid = "";
             mewtwo = "";
@@ -346,7 +346,7 @@ function leinforaid(pCode, cb) {  //leraud
             criaRaid(channel.name, pkmraid, result, qtatr, mewtwo);
 
 
-          }, 1500);
+         
 
         }
       });
