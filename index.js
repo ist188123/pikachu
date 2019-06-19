@@ -254,7 +254,7 @@ function leinforaid(pCode, cb) {  //leraud
                 array.push(msg.content);
               }
 		//tempo da raid em horas    
-              if (msg.content.startsWith('!t') && msg.content.length==2) {
+              if (msg.content.startsWith('!t') && msg.content.length==3) {
                 mewtwo = msg.content.substring(2);
                 array.push(msg.content);
               }
@@ -327,7 +327,7 @@ function leinforaid(pCode, cb) {  //leraud
                   mewtwo = item.substring(1);
                 }
 		      //tempo da raid
-		if (item.startsWith('!t') && msg.content.length==2) {
+		if (item.startsWith('!t') && msg.content.length==3) {
                   mewtwo = item.substring(2);
                 }
 
