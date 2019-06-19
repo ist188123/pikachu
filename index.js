@@ -253,7 +253,11 @@ function leinforaid(pCode, cb) {  //leraud
                 mewtwo = msg.content.substring(1);
                 array.push(msg.content);
               }
-
+		//tempo da raid em horas    
+              if (msg.content.startsWith('!t') && msg.content.length==2) {
+                mewtwo = msg.content.substring(2);
+                array.push(msg.content);
+              }
 
 
 
@@ -319,8 +323,12 @@ function leinforaid(pCode, cb) {  //leraud
                 if (item.startsWith('%')) {
                   pkmraid = item.substring(1);
                 }
-                if (item.startsWith('!')) {
+                if (item.startsWith('!exraid')) {
                   mewtwo = item.substring(1);
+                }
+		      //tempo da raid
+		if (item.startsWith('!t') && msg.content.length==2) {
+                  mewtwo = item.substring(2);
                 }
 
                 if (item.startsWith('!') || item.startsWith('%')) {
@@ -377,6 +385,15 @@ function leinforaid(pCode, cb) {  //leraud
   async function criaRaid(canalRaid, bicho, adicional, participantesRaid, sponser) {
 
     try {
+        var temporaid=45;
+	   //tempo duranção raid 
+	 if(parseInt(sponser)>0){
+          temporaid=60*parseInt(sponser)
+          }     //-------
+       
+	    
+	    
+	    
         var titulo = "RAID " + canalRaid.substr(5);
         var tiporaid = canalRaid.substring(5, 6);
         let bosscp = "";
@@ -392,8 +409,7 @@ function leinforaid(pCode, cb) {  //leraud
         //-------
 
         //-------
-        var titulo = "RAID " + canalRaid.substr(5);
-        var tiporaid = canalRaid.substring(5, 6);
+    
         //verifica se o numero é positivo ou negarivo
         var thoras = titulo.split("-");
         var horas = thoras[thoras.length - 3];
@@ -438,7 +454,7 @@ function leinforaid(pCode, cb) {  //leraud
 
         var choca = minutos_abrir_aberta;
         if (parseInt(choca) < 0) {
-            choca = -(45 + parseInt(choca))
+            choca = -(parseInt(temporaid) + parseInt(choca))
         }
         //console.log("hora atual: "+add_minutes(new Date(),0));
         //mais esta ouvo +30
@@ -447,7 +463,7 @@ function leinforaid(pCode, cb) {  //leraud
         var abre = add_minutes(date, choca).toString();
         // console.log("Abre ovo : "+abre);
         //-----------------------
-        var desaparece = parseInt(choca) + 45;
+        var desaparece = parseInt(choca) + parseInt(temporaid);
 
         // console.log("tempo da raid "+ desaparece)
 
