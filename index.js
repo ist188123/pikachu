@@ -192,7 +192,7 @@ function leinforaid(pCode, cb) {  //leraud
 
 
     //-------------------------------------------
-    if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
+    if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')|| msg.content.startsWith('!t')) {
 
 
       //paga todas as mensagens do canal
@@ -257,7 +257,7 @@ function leinforaid(pCode, cb) {  //leraud
               if (msg.content.startsWith('!t') && msg.content.length==3) {
                 mewtwo = msg.content.substring(2);
                 array.push(msg.content);
-              }
+              }	
 
 
 
