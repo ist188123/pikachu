@@ -386,24 +386,15 @@ function leinforaid(pCode, cb) {  //leraud
 
     try {
         var temporaid=45;
-	     msg.channel.send({embed: {
-  color: 3447003,
- description: "tempo normal raid "+temporaid
-}});
 	     
-	     msg.channel.send({embed: {
-  color: 3447003,
- description: "tempo extra raid "+sponser
-}});
+	     
+	    
 	   //tempo duranção raid 
 	 if(parseInt(sponser)>0){
           temporaid=60*parseInt(sponser)
           }     //-------
        
-	  msg.channel.send({embed: {
-  color: 3447003,
- description: "Novo tempo extra raid "+temporaid
-}});    
+	 
 	    
 	    
         var titulo = "RAID " + canalRaid.substr(5);
