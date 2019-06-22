@@ -133,8 +133,34 @@ function leinforaid(pCode, cb) {  //leraud
 
 
   if (msg.channel.name.startsWith('_raid')) {
+//altera hora da raid
+if (msg.content.startsWith('!h') && msg.content.length > 2) {
+
+     
+      var nomecanal = msg.channel.name
+      var thoras = nomecanal.split("-");
+      var horas = thoras[thoras.length - 3];
 
 
+
+      var novahora = msg.content.substring(2);
+
+      // console.log(horas)
+      var novotitulo = nomecanal.replace(horas, novahora)
+      msg.channel.send({
+        embed: {
+          color: 3447003,
+          description: "Nova hora Raid:" + novahora +" alterado por : "+msg.author
+        }
+      });
+      //onsole.log(novotitulo)
+
+     msg.guild.channels.find("name", nomecanal).setName(novotitulo);
+     msg.channel.send('👍')
+
+
+    }
+    //--fim novo --
 
 
 
