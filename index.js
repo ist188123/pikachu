@@ -282,7 +282,7 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
               
 		//tempo da raid em horas    
               if (msg.content.startsWith('!t') && msg.content.length==3) {
-                tempo_durancao_raid = item.substring(2);
+                tempo_durancao_raid = msg.content.substring(2);
                 array.push(msg.content);
               }	
 
@@ -355,9 +355,9 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
                 }
 		      //tempo da raid
 		if (item.startsWith('!t') && msg.content.length==3) {
-            tempo_durancao_raid = item.substring(2);
+                  tempo_durancao_raid = item.substring(2);
                 }
-
+              	
                 if (item.startsWith('!') || item.startsWith('%')) {
 
                 } else {
@@ -372,7 +372,7 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
             var qtatr = result.filter(item => item !== autor).length
 
 
-            //msg.channel.send("result 2"+result);            
+           msg.channel.send("result 2"+result);            
 
             //--------------------------------------               
 
