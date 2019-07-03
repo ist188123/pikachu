@@ -253,7 +253,7 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
 
 
           var array = [];
-
+         var tempo_durancao_raid=""
           adicional = "";
           mewtwo = "";
           pkmraid = "";
@@ -279,9 +279,10 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
                 mewtwo = msg.content.substring(1);
                 array.push(msg.content);
               }
+              
 		//tempo da raid em horas    
               if (msg.content.startsWith('!t') && msg.content.length==3) {
-                mewtwo = msg.content.substring(2);
+                tempo_durancao_raid = item.substring(2);
                 array.push(msg.content);
               }	
 
@@ -354,7 +355,7 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
                 }
 		      //tempo da raid
 		if (item.startsWith('!t') && msg.content.length==3) {
-                  mewtwo = item.substring(2);
+            tempo_durancao_raid = item.substring(2);
                 }
 
                 if (item.startsWith('!') || item.startsWith('%')) {
@@ -377,7 +378,7 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
 
 
 
-            criaRaid(channel.name, pkmraid, result, qtatr, mewtwo);
+            criaRaid(channel.name, pkmraid, result, qtatr, mewtwo,tempo_durancao_raid);
 
 
           }, 1500);
@@ -408,17 +409,17 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
 
 
   //lista todos os elementos que tem a regra
-  async function criaRaid(canalRaid, bicho, adicional, participantesRaid, sponser) {
+  async function criaRaid(canalRaid, bicho, adicional, participantesRaid, sponser,duracao_raid) {
 
     try {
         var temporaid=45;
-	     
+       
 	     
 	    
 	   //tempo duranção raid 
-	 if(parseInt(sponser)>0){
-          temporaid=60*parseInt(sponser)
-          }     //-------
+	 if(parseInt(duracao_raid)>0){
+          temporaid=60*parseInt(duracao_raid)
+         }     //-------
        
 	 
 	    
