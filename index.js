@@ -372,7 +372,7 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
             var qtatr = result.filter(item => item !== autor).length
 
 
-           msg.channel.send("result 2"+result);            
+        //   msg.channel.send("result 2"+result);            
 
             //--------------------------------------               
 
