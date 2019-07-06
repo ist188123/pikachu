@@ -265,7 +265,9 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
           //------------------------
           msg.guild.channels.find("name", channel.name).fetchMessages({ limit: 100 }).then(msg => {
             msg.forEach(msg => {
-
+               adicional = "";
+               mewtwo = "";
+               pkmraid = "";
               //  msg.reply("aqui 3"+channel.name);
 
               //msg inicia com %
@@ -614,8 +616,9 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
       .addBlankField(true)
       .addField("\n\n\n\n\n\Fraco contra:", status, true);
 
-    msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });
-
+	
+          msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });
+      
 
   }
 
