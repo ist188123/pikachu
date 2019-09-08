@@ -414,7 +414,7 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
   async function criaRaid(canalRaid, bicho, adicional, participantesRaid, sponser,duracao_raid) {
 
     try {
-        var temporaid=15;
+        var temporaid=90;
        
 	     
 	    
