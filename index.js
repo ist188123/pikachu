@@ -716,7 +716,9 @@ var validaNumero=function(num){
       
   var dhlocal = new Date();
       var data_local = dhlocal.getTimezoneOffset();
-      var horas_locais=dhlocal.getHours()+1;
+	    //hora local +1 um hora ou menos uma hora
+     // var horas_locais=dhlocal.getHours()+1;
+	     var horas_locais=dhlocal.getHours();
  
       
 var relogio=horas_locais+":"+dhlocal.getMinutes();
