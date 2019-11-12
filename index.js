@@ -556,7 +556,7 @@ if (msg.content.startsWith('!h') && msg.content.length > 2) {
             if (sponser == "exraid") {
                 cor = "0XFEAFEA";
                 ovo = "https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png"
-                horas = horas + "\nGinásio em pontuação para o Deoxys";
+                horas = horas + "\nGinásio em pontuação para o Regigigas";
             }
             //----  FIM TIPO RAID ---
 
